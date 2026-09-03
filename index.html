@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#32070d">
+  <title>For My Shona ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="petals" aria-hidden="true"></div>
+  <div id="sparkles" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <div class="brand">M <span>♥</span> A</div>
+    <button id="musicBtn" class="music-btn" type="button" aria-label="Toggle music">♫ <span>Music</span></button>
+  </header>
+
+  <main>
+    <section class="scene welcome-scene active" data-scene="1">
+      <div class="welcome-orb orb-one"></div>
+      <div class="welcome-orb orb-two"></div>
+      <div class="welcome-stars"></div>
+      <div class="welcome-card">
+        <div class="tiny-crown">✦</div>
+        <h1>Surprise</h1>
+        <p class="love-question">I made a little world for you...</p>
+        <div class="heart-surprise-wrap">
+          <button id="doorBtn" class="surprise-door" type="button" aria-label="Open the door to your surprise">
+            <span class="door-frame" aria-hidden="true">
+              <span class="door-panel door-panel-left"></span>
+              <span class="door-panel door-panel-right"></span>
+              <span class="door-knob door-knob-left"></span>
+              <span class="door-knob door-knob-right"></span>
+              <span class="door-glow" aria-hidden="true"></span>
+            </span>
+          </button>
+          <p class="heart-hint">Tap the door to open your surprise ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene birthday-scene" data-scene="2">
+      <div class="birthday-glow glow-a"></div>
+      <div class="birthday-glow glow-b"></div>
+      <div class="birthday-card">
+        <p class="eyebrow light">A day made for you</p>
+        <h2>Happy Birthday <em>Shona</em> ❤️</h2>
+        <div class="first-photo-frame">
+          <div class="photo-shine"></div>
+          <img src="assets/firstphoto.jpg" alt="Shona" class="first-photo">
+        </div>
+        <div class="birthday-date">
+          <strong>07 September 2001</strong>
+          <span>The day my favourite person came into this world.</span>
+        </div>
+        <p class="age-label">Your age, counted with love</p>
+        <div class="age-counter" id="ageCounter" aria-live="polite">
+          <div class="age-unit"><strong id="ageYears">0</strong><span>Years</span></div>
+          <div class="age-separator">:</div>
+          <div class="age-unit"><strong id="ageMonths">0</strong><span>Months</span></div>
+          <div class="age-separator">:</div>
+          <div class="age-unit"><strong id="ageDays">0</strong><span>Days</span></div>
+          <div class="age-separator">:</div>
+          <div class="age-unit"><strong id="ageHours">0</strong><span>Hours</span></div>
+          <div class="age-separator">:</div>
+          <div class="age-unit"><strong id="ageMinutes">0</strong><span>Minutes</span></div>
+          <div class="age-separator">:</div>
+          <div class="age-unit"><strong id="ageSeconds">0</strong><span>Seconds</span></div>
+        </div>
+        <p class="birthday-countdown" id="birthdayCountdown">Calculating your next birthday...</p>
+        <button class="next-btn primary-btn" type="button">Next ✨</button>
+      </div>
+    </section>
+
+    <section class="scene cake-scene" data-scene="3">
+      <div class="cake-bg-heart heart-a">♥</div>
+      <div class="cake-bg-heart heart-b">♥</div>
+      <div class="cake-wrap">
+        <p class="eyebrow light">Make a wish</p>
+        <h2>One candle. One wish. One very special girl.</h2>
+        <div class="cake" id="cake">
+          <div class="candle"><div class="flame" id="flame"></div><div class="wick"></div><div class="wax"></div></div>
+          <div class="icing"></div>
+          <div class="cake-top"></div>
+          <div class="cake-body"><span>♥</span><span>♥</span><span>♥</span></div>
+          <div class="cake-body-layer"></div>
+          <div class="plate"></div>
+        </div>
+        <div class="cake-status" id="cakeStatus">The candle is waiting for your wish...</div>
+        <div class="cake-actions">
+          <button class="secondary-btn" id="blowBtn" type="button">🌬️ Blow Candle</button>
+          <button class="primary-btn" id="cutBtn" type="button" disabled>🔪 Cut Cake</button>
+        </div>
+        <div id="cakeCutNote" class="cake-cut-note" hidden>✨ Two little pieces now... one for you, one for me. ❤️</div>
+        <button class="next-btn text-link" id="cakeNext" type="button" hidden>Our little story →</button>
+      </div>
+    </section>
+
+    <section class="scene note-scene" data-scene="4">
+      <div class="note-glow"></div>
+      <div class="letter-card">
+        <div class="letter-seal">♥</div>
+        <p class="eyebrow dark">For the girl who became my favorite person</p>
+        <h2>Happy Birthday, Shona.</h2>
+        <p>Somewhere between ordinary days and unforgettable moments, you became one of the most beautiful parts of my life.</p>
+        <p>I love the little things about us—the silly conversations, the random smiles, the memories that appeared without warning, and the comfort of simply knowing you are there.</p>
+        <p>Today I do not just celebrate the day you were born. I celebrate every moment that brought <strong>you and me</strong> here.</p>
+        <p class="final-line">May this new year of your life be soft, bright, exciting and full of dreams coming true. And may we keep creating memories worth remembering. ❤️</p>
+        <div class="signature">Always a little more love for you... 💕</div>
+        <button class="next-btn primary-btn" type="button">Next 💌</button>
+      </div>
+    </section>
+
+    <section class="scene gallery-scene" data-scene="5">
+      <div class="gallery-header">
+        <p class="eyebrow dark">Little pieces of us</p>
+        <h2>Six frames. Six reasons to smile.</h2>
+        <p>Tap any photo and watch it come alive.</p>
+      </div>
+      <div class="gallery">
+        <button class="photo-card" type="button"><img src="assets/photo1.jpg" alt="Memory 1"><span>01</span></button>
+        <button class="photo-card" type="button"><img src="assets/photo2.jpg" alt="Memory 2"><span>02</span></button>
+        <button class="photo-card" type="button"><img src="assets/photo3.jpg" alt="Memory 3"><span>03</span></button>
+        <button class="photo-card" type="button"><img src="assets/photo4.jpg" alt="Memory 4"><span>04</span></button>
+        <button class="photo-card" type="button"><img src="assets/photo5.jpg" alt="Memory 5"><span>05</span></button>
+        <button class="photo-card" type="button"><img src="assets/photo6.jpg" alt="Memory 6"><span>06</span></button>
+      </div>
+      <button class="next-btn text-link" type="button">Next →</button>
+    </section>
+
+    <section class="scene quiz-scene" data-scene="6">
+      <div class="quiz-card">
+        <p class="eyebrow light">One very important question</p>
+        <h2>What is...</h2>
+        <div class="equation">2 + 2 = ?</div>
+        <div class="answers">
+          <button id="wrongAnswer" class="answer wrong-answer" type="button">4</button>
+          <button id="rightAnswer" class="answer right-answer" type="button">22</button>
+        </div>
+        <p id="quizHint" class="quiz-hint">Think carefully, Shona... 😌</p>
+      </div>
+    </section>
+
+    <section class="scene smart-scene" data-scene="7">
+      <div class="smart-bg-shape"></div>
+      <div class="smart-card">
+        <p class="eyebrow dark">Correct answer unlocked</p>
+        <div class="smart-frame"><div class="smart-sweep"></div><img src="assets/smart.gif" alt="Smart girl" class="smart-gif"></div>
+        <h2>Smart</h2>
+        <p>You knew exactly which answer mattered. 😌❤️</p>
+        <button class="next-btn primary-btn" type="button">One last surprise ✦</button>
+      </div>
+    </section>
+
+    <section class="scene finale-scene" data-scene="8">
+      <div class="finale-stars"></div><div class="firefly-field"></div>
+      <div class="finale-card">
+        <div class="finale-heart">♥</div>
+        <div class="finale-message">
+          <p class="eyebrow dark">And now, the last little secret...</p>
+          <h2>🎂❤️ <strong>Happy Birthday, My Shona!</strong> ❤️🎂</h2>
+          <div class="finale-line"></div>
+          <p>Happy Birthday to the most beautiful and special person in my life. 🥹❤️<br>You’re not just my girlfriend, you’re my happiness, my comfort, my favorite person, and the one who makes my life so much more beautiful. 🫶🏻</p>
+          <p>I feel so lucky to have you in my life. Every moment with you is special, and I hope I can keep making you smile, keep annoying you 😜, and keep loving you more and more every single day. ❤️</p>
+          <p>On your special day, I just want to say — <strong>I love you more than words can explain.</strong> 🫂❤️</p>
+          <p>May all your dreams come true, may you always keep that beautiful smile on your face, and may this year bring you endless happiness, success, and lots of love. ✨🥰</p>
+          <p><strong>Happy Birthday, my Shona! 🎂❤️</strong><br><strong>I love you today, tomorrow, and forever. 🫶🏻♾️❤️</strong></p>
+        </div>
+        <button id="watchAgain" class="primary-btn" type="button">↻ Start Again</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="closeLightbox" class="close-lightbox" type="button" aria-label="Close">×</button>
+    <img id="lightboxImg" src="" alt="Selected memory">
+  </div>
+
+  <audio id="happyBirthdayMusic" src="assets/happybirthday.mp3" loop preload="auto"></audio>
+  <audio id="bgMusic" src="assets/music.mp3" loop preload="auto"></audio>
+  <audio id="smartMusic" src="assets/musicsmart.mp3" preload="auto"></audio>
+  <audio id="newMusic" src="assets/new music.mp3" loop preload="auto"></audio>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
